@@ -1,53 +1,118 @@
+const ceviri = {
+    tr: {
+        texts:{
+            buttonWarning:"Düğmenin çalışması için en az bir ses seçmeniz gerekir.",
+            appNote:"Calibri web uygulaması aslında Microsoft'un Elpy uygulamasından ilham alınarak hayata geçirilen bir projedir.",
+            technology:"Hangi teknolojiler kullanıldı?",
+            aboutApp:"Uygulama Hakkında",
+            name:"Kurs tarafindan yeniden kodlandi",
+            name2:"Kurs tarafindan yeniden kodlandi",
+            rights:"© Tüm Hakları Saklıdır"
+
+        },    
+          labels:{
+            beach: "Plaj",
+            birds: "kuslar",
+            cafe: "Kafe",
+            campfire:"kamp atesi",
+            city:"sehir",
+            fireplace:"sömine",
+            forest:"orman",
+            heavyRain:"Yogun Yagmur",
+            nightCrickets:"Circir Böcekleri",
+            rain:"Yagmur",
+            rainCamping:"yagmur,kamp",
+            rainWindshiled:"Yagmur,ön cam",
+            snow:"Kar",
+            thunder:"Gök gürültüsü",
+            train:"Tren"
+
+        }
+
+    },
+    en: {
+        texts:{
+        
+            buttonWarning: "For the button to work, you need to select one sound.",
+            description: "Calibri web application is actually a project inspired by Microsoft's Elpy application.",
+            contents: "What technologies were used?",
+            aboutApp: "About App",
+            name: "Created by Milyaz Kamil",
+            name2: "Created by Milyaz Kamil",
+            rights: "©️ All Rights Reserved"
+        },    
+        labels :{
+            beach:"Beach",
+            birds:"Birds",
+            cafe:"Cafe",
+            campfire:"Campfire",
+            city:"City",
+            fireplace:"Fireplace",
+            forest:"Forest",
+            heavyRain:"Heavy rain",
+            nightCrickets:"Night crickets",
+            rain:"rain",
+            rainCamping:"rain,camping",
+           rainWindshield:"Rain,windshield",
+            snow:"Snow",
+            thunder:"Thunder",
+            train:"Train"
+        }
+    }
+}
+
+
+
 //English-Turkish language exchange
 
 document.querySelector(".turkish-button").addEventListener("click", (e) => {
-    document.querySelector(".warning").innerText = "Düğmenin çalışması için en az bir ses seçmeniz gerekir.";
-    document.querySelector(".discription").innerHTML = "Calibri web uygulaması aslında Microsoft'un Elpy uygulamasından ilham alınarak hayata geçirilen bir projedir.";
-    document.querySelector(".contents").innerHTML = "Hangi teknolojiler kullanıldı?";
-    document.querySelector(".about-app-p").innerText = "Uygulama Hakkında";
-    document.querySelector(".name").innerHTML = "Milyaz Kamil Tarafından Oluşturuldu";
-    document.querySelector(".name2").innerHTML = "Milyaz Kamil Tarafından Oluşturuldu";
-    document.querySelector(".rights").innerHTML = "© Tüm Hakları Saklıdır";
-    document.querySelector(".beach-p").innerText = "Plaj";
-    document.querySelector(".birds-p").innerText = "Kuşlar";
-    document.querySelector(".cafe-p").innerText = "Kafe";
-    document.querySelector(".campfire-p").innerText = "Kamp ateşi";
-    document.querySelector(".city-p").innerText = "Şehir";
-    document.querySelector(".fireplace-p").innerText = "Şömine";
-    document.querySelector(".forest-p").innerText = "Orman";
-    document.querySelector(".heavy-rain-p").innerText = "Yoğun yağış";
-    document.querySelector(".night-crickets-p").innerText = "Cırcır böcekleri";
-    document.querySelector(".rain-p").innerText = "Yağmur";
-    document.querySelector(".rain-camping-p").innerText = "Yağmur, kamp";
-    document.querySelector(".rain-windshield-p").innerText = "Yağmur, ön cam";
-    document.querySelector(".snow-p").innerText = "Kar";
-    document.querySelector(".thunder-p").innerText = "Gök gürültüsü";
-    document.querySelector(".train-p").innerText = "Tren";
+    document.querySelector(".warning").innerText =ceviri.tr.texts.buttonWarning ;
+    document.querySelector(".discription").innerHTML = ceviri.tr.texts.appNote;
+    document.querySelector(".contents").innerHTML = ceviri.tr.texts.technology ;;
+    document.querySelector(".about-app-p").innerText = ceviri.tr.texts.aboutApp ;;
+    document.querySelector(".name").innerHTML = ceviri.tr.texts.name;
+    document.querySelector(".name2").innerHTML = ceviri.tr.texts.name2;
+    document.querySelector(".rights").innerHTML = ceviri.tr.texts.rights;;
+    document.querySelector(".beach-p").innerText = ceviri.tr.labels.beach;
+    document.querySelector(".birds-p").innerText = ceviri.tr.labels.birds;
+    document.querySelector(".cafe-p").innerText = ceviri.tr.labels.cafe;
+    document.querySelector(".campfire-p").innerText = ceviri.tr.labels.campfire;
+    document.querySelector(".city-p").innerText = ceviri.tr.labels.city;
+    document.querySelector(".fireplace-p").innerText = ceviri.tr.labels.fireplace;
+    document.querySelector(".forest-p").innerText = ceviri.tr.labels.forest;
+    document.querySelector(".heavy-rain-p").innerText = ceviri.tr.labels.heavyRain;
+    document.querySelector(".night-crickets-p").innerText = ceviri.tr.labels.nightCrickets;
+    document.querySelector(".rain-p").innerText = ceviri.tr.labels.rain;
+    document.querySelector(".rain-camping-p").innerText = ceviri.tr.labels.rainCamping;
+    document.querySelector(".rain-windshield-p").innerText = ceviri.tr.labels.rainWindshiled;
+    document.querySelector(".snow-p").innerText = ceviri.tr.labels.snow;
+    document.querySelector(".thunder-p").innerText = ceviri.tr.labels.thunder;
+    document.querySelector(".train-p").innerText = ceviri.tr.labels.train;
 })
 
 document.querySelector(".english-button").addEventListener("click", (e) => {
-    document.querySelector(".warning").innerText = "For the button to work, you need to select one sound.";
-    document.querySelector(".discription").innerHTML = "Calibri web application is actually a project inspired by Microsoft's Elpy application.";
-    document.querySelector(".contents").innerHTML = "What technologies were used?";
-    document.querySelector(".about-app-p").innerText = "About App";
-    document.querySelector(".name").innerHTML = "Created by Milyaz Kamil";
-    document.querySelector(".name2").innerHTML = "Created by Milyaz Kamil";
-    document.querySelector(".rights").innerHTML = "© All Rights Reserved";
-    document.querySelector(".beach-p").innerText = "Beach";
-    document.querySelector(".birds-p").innerText = "Birds";
-    document.querySelector(".cafe-p").innerText = "Cafe";
-    document.querySelector(".campfire-p").innerText = "Campfire";
-    document.querySelector(".city-p").innerText = "City";
-    document.querySelector(".fireplace-p").innerText = "Fireplace";
-    document.querySelector(".forest-p").innerText = "Forest";
-    document.querySelector(".heavy-rain-p").innerText = "Heavy rain";
-    document.querySelector(".night-crickets-p").innerText = "Night crickets";
-    document.querySelector(".rain-p").innerText = "Rain";
-    document.querySelector(".rain-camping-p").innerText = "Rain, camping";
-    document.querySelector(".rain-windshield-p").innerText = "Rain, windshield";
-    document.querySelector(".snow-p").innerText = "Snow";
-    document.querySelector(".thunder-p").innerText = "Thunder";
-    document.querySelector(".train-p").innerText = "Train";
+    document.querySelector(".warning").innerText =ceviri.tr.texts.buttonWarning ;
+    document.querySelector(".discription").innerHTML = ceviri.tr.texts.appNote;
+    document.querySelector(".contents").innerHTML = ceviri.tr.texts.technology ;;
+    document.querySelector(".about-app-p").innerText = ceviri.tr.texts.aboutApp ;;
+    document.querySelector(".name").innerHTML = ceviri.tr.texts.name;
+    document.querySelector(".name2").innerHTML = ceviri.tr.texts.name2;
+    document.querySelector(".rights").innerHTML = ceviri.tr.texts.rights;;
+    document.querySelector(".beach-p").innerText = ceviri.en.labels.beach;
+    document.querySelector(".birds-p").innerText = ceviri.en.labels.birds;
+    document.querySelector(".cafe-p").innerText = ceviri.en.labels.cafe;
+    document.querySelector(".campfire-p").innerText = ceviri.en.labels.campfire;
+    document.querySelector(".city-p").innerText = ceviri.en.labels.city;
+    document.querySelector(".fireplace-p").innerText = ceviri.en.labels.fireplace;
+    document.querySelector(".forest-p").innerText = ceviri.en.labels.forest;
+    document.querySelector(".heavy-rain-p").innerText = ceviri.en.labels.heavyRain;
+    document.querySelector(".night-crickets-p").innerText=ceviri.en.labels.nightCrickets;
+    document.querySelector(".rain-p").innerText = ceviri.en.labels.rain;
+    document.querySelector(".rain-camping-p").innerText = ceviri.en.labels.rainCamping;
+    document.querySelector(".rain-windshield-p").innerText = ceviri.en.labels.rainWindshiled;
+    document.querySelector(".snow-p").innerText = ceviri.en.labels.snow;
+    document.querySelector(".thunder-p").innerText = ceviri.en.labels.thunder;
+    document.querySelector(".train-p").innerText = ceviri.en.labels.train;
 })
 
 
